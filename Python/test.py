@@ -22,3 +22,7 @@ name = input("Введите Ваше Имя : ")
 count = input('Сколько раз умножить? : ')
 
 print(name * int(count))
+
+x = [10, 2, 5, 7]
+x.sort()
+print(x)
