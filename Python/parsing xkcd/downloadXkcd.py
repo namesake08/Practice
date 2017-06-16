@@ -10,12 +10,14 @@ while not url.endswith('#'):
 	#Загрузка страницы.
 	print('Загружается страница %s...' % url)
 	res = requests.get(url)
+	print(res)
 	res.raise_for_status()
 
-	soup = bs4.BeautifulSoup(res.text)
+	soup = bs4.BeautifulSoup(res.text, "lxml")
 
 	#Поиск URL-адреса изображения комикса.
 	comicElem = soup.select('#comic img')
+	print(comicElem)
 	if comicElem == []:
 		print('Не удалось найти изображение комикса.')
 	else:
