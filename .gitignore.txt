@@ -1,7 +1,10 @@
+# While in Windows: enable line ending conversion from CRLF to LF
+# git config --global core.autocrlf true
+#
 # Visual Studio Code generated folder
 /.vscode/
+#
 # PyCharm generated folder
-/.idea/# PyCharm generated folder
 /.idea/# PyCharm generated folder
 /.idea/
 
